@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Carousel</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #ffffff;
+  }
+
+  .carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .track {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+  }
+
+  .track img {
+    height: 60px;
+    margin: 0 40px;
+    vertical-align: middle;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="carousel">
+  <div class="track">
+    <!-- LOGOS -->
+    <img src="logo1.png">
+    <img src="logo2.png">
+    <img src="logo3.png">
+    <img src="logo4.png">
+    <img src="logo5.png">
+
+    <!-- DUPLICATE FOR LOOP -->
+    <img src="logo1.png">
+    <img src="logo2.png">
+    <img src="logo3.png">
+    <img src="logo4.png">
+    <img src="logo5.png">
+  </div>
+</div>
+
+</body>
+</html>
